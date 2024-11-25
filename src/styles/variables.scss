@@ -1,0 +1,8 @@
+$color: red;
+$max-width--sp: 767px;
+
+@mixin sp($max: $max-width--sp) {
+  @media screen and (max-width: #{$max}) {
+    @content;
+  }
+}

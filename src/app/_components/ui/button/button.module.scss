@@ -1,0 +1,16 @@
+//@import 'variables';
+@use 'variables' as v;
+
+.storybookbutton {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: v.$color;
+  @include v.sp {
+    background-color: pink;
+  }
+}
